@@ -246,15 +246,10 @@ function update() { /* Have to UPLOAD THE TEST FILE*/
         }
         else if (row >= 3 && column == 4 && numCorrect != length) {
             gameOver = true;
-            //const looserPC = document.getElementById("looserPC");
-            // const lostContainer = document.createElement("lost");
-            // lostContainer.classList.add("looser");
-          
-            // const lostMessage = document.createElement("lost");
-            // lostMessage.innerHTML = "You could not guess the word &nbsp <b> " + state.secret + " </b>&nbsp !";
-          
-            // lostContainer.appendChild(lostMessage);
-            // looserPC.appendChild(lostContainer);
+            document.getElementById("table").remove();
+            const looserGif = document.getElementById('img2');
+            looserGif.style.display = 'block';
+
 
             const looser = document.getElementById('looserPC');
             looser.style.display = 'flex';

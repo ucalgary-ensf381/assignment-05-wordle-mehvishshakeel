@@ -7,6 +7,49 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <script src="./wordle.js"></script>
+    <div class="header">
+      <div class="center">
+        <h1>Wordle</h1>
+      </div>          
+      <div class="options">
+        <button id="darkMode" class="darkMode">&#x25D1</button>
+        <button id="hint" class="hint">&#63</button>
+        <button id="instructions">&#9432</button>
+      </div>
+    </div>
+
+    <hr> 
+
+    <div class="container">
+      <div id = "img" > <img src = "congrats_fkscna.gif" alt = 'congrats'></div>
+      <div id="table"></div>
+    </div>
+
+    <div id="restart">
+      <button id="start-over" onClick="window.location.reload();"><b>Start Over</b></button>
+      
+    </div>
+
+    
+
+    <div id="instTB">
+      <div id="instText"></div>
+      <div id="hintText"></div>
+    </div>
+    
+    
+    <div id="winnerPC">
+      
+    </div>
+    <div id="looserPC">
+      <lost>
+    </lost></div>
+
+
+    <script src="./wordle.js"></script>  
+    <div class="footer">
+      <p>© Mehvish Fatima Shakeel 2023</p>
+  </div>
   </body>
+  
 </html>

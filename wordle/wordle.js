@@ -52,11 +52,18 @@ const body = document.body;
 const tiles = document.getElementsByClassName('tiles');
 const form = document.querySelector('body');
 const footer = document.querySelector('.footer');
+const hintDW = document.getElementById('hint');
 const instructions = document.getElementById('instructions');
+
+const header = document.getElementsByClassName('header');
+
 
 button.addEventListener('click', () => {
   body.classList.toggle('dark');
-  instructions.classList.toggle('light');
+  instructions.classList.toggle('dark');
+  hintDW.classList.toggle('dark');
+  button.classList.toggle('dark');
+  header.color = 'white';
   
   Array.from(tiles).forEach((tile) => {
     tile.classList.toggle('dark');

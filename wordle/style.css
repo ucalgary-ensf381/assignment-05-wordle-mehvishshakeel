@@ -1,7 +1,7 @@
 :root{
   --dark: #000;
   --light: #fff;
-  --purple: #3e0dc5;
+  --purple: #7f5cdd;
 }
 .darkmode{
   --dark: #000;
@@ -24,7 +24,7 @@ body.dark {
 
 .header {
   display: flex;
-  color: #3e0dc5;
+  color: #8765e6;
   justify-content: space-between;
   align-items: center;
   padding: 20px;  
